@@ -1,4 +1,7 @@
 #include "main.h"
+/**
+salam
+*/
 void print_numbers(void)
 {
 int number = 48 
