@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-*salam
+*print_numbers - function that print all numbers from
+*
 */
 void print_numbers(void)
 {
