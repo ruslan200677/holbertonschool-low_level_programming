@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-salam
+*salam
 */
 void print_numbers(void)
 {
