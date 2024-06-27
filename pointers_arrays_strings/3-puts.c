@@ -1,22 +1,18 @@
-#include "main.h"
+/*
+ * File: 3-puts.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
- * _puts - prints a string, followed by a new line.
- * @str: input string.
- * Return: no return.
+ * _puts - Prints a string to stdout.
+ * @str: The string to be printed.
  */
 void _puts(char *str)
 {
-	int count = 0;
+	while (*str)
+		_putchar(*str++);
 
-	while (count >= 0)
-	{
-		if (str[count] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(str[count]);
-		count++;
-	}
+	_putchar('\n');
 }
