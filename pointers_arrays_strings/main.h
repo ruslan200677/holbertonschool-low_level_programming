@@ -1,5 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
+
+/**
+* void prototypes()
+*char prototypes()
+* int prototypes()
+*/
 void reset_to_98(int *n);
 void _puts(char *str);
 void print_rev(char *s);
@@ -37,4 +44,4 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
 int coincidence(char *a, char *b);
-#endif
+#endif 
