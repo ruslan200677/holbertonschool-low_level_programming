@@ -1,41 +1,24 @@
 #include "main.h"
-
 /**
-*  _strcmp - Function which compare two strings and
-*@s1: first string
-*@s2:second string
-*Return:
-*		returns zero if s1 == s2
-*		returns negative number if s1 < s2
-*		returns positive number if s1 > s2
-*/
-
-int _strcmp(char *s1, char *s2)
+ * _strspn - prints the consecutive caracters of s1 that are in s2.
+ * @s: source string
+ * @accept: searching string
+ *
+ * Return: new string.
+ */
+unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0, diff = 0;
+	unsigned int i, j;
 
-	while (1)
+	for (j = 0; *(s + j); j++)
 	{
-		if (s1[i] == '\0' && s2[i] == '\0')
-			break;
-		else if (s1[i] == '\0')
+		for (i = 0; *(accept + i); i++)
 		{
-			diff = s2[i];
-			break;
+			if (*(s + j) == *(accept + i))
+				break;
 		}
-		else if (s2[i] == '\0')
-		{
-			diff = s1[i];
-			break;
-		}
-		else if (s1[i] != s2[i])
-		{
-			diff = s1[i] - s2[i];
-			break;
-		}
-		else
-			i++;
-
+	if (*(accept + i) == '\0')
+		break;
 	}
-	return (diff);
+	return (j);
 }
