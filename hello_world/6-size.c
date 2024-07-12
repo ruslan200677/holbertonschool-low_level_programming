@@ -1,6 +1,5 @@
 /*
  * File: 6-size.c
- * Auth: Brennan D Baraban
  */
 
 #include <stdio.h>
